@@ -1,0 +1,79 @@
+.card{
+    height: 7rem;
+    width: 7rem;
+    background-color: white;
+    margin: 2rem auto;
+    padding: 1rem;
+
+    border: solid;
+    border-color: rgba(255,255,255,0);
+    
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    
+   
+    border-radius: 8px;
+
+    transition: 0.25s ease-out;
+}
+
+.card-text{
+    font-size: 6rem;
+
+    margin: auto;
+  
+    max-height: 2ch;
+    max-width: 2ch;
+
+    text-align: center;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+
+}
+
+.card-description{
+    display: block;
+    font-size: 1rem;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 15ch;
+    background-color: rgba(255,255,255,0);
+    padding: 1rem;
+    border-radius: 4px;
+    border: solid;
+    border-color: white;
+    border-width: 0.025rem;
+    font-family: 'Poppins', sans-serif;
+
+    z-index: -3;
+
+    transition: 0.08s ease-in;
+}
+
+
+.card:hover{
+    border: solid;
+    border-color: rgba(255,255,255,0.8);
+    color: white;
+
+    background-color: rgba(255,255,255,0.3);
+
+    transition: 0.25s ease-in;
+}
+
+
+
+.card:hover .card-description{
+    
+    color: white;
+    background-color: #30475E;
+   
+
+    z-index: 3;
+
+    transition: 0.25s ease-in;
+
+}
+

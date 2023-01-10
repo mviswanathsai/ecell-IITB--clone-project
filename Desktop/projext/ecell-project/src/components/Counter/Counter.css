@@ -1,0 +1,7 @@
+.count-holder{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 2rem;
+}
+

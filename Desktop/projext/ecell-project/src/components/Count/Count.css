@@ -1,0 +1,38 @@
+
+
+.counter {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.9em;
+    margin: 6px 0;
+  }
+
+.block{
+    display: block;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name{
+    color: #30475E;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.count-container{
+    font-size: 4rem;
+    text-align: center;
+    padding: 2.5rem;
+    
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.inline{
+    display: inline-block;
+}
+@media(max-width: 744px){
+    .count-container{
+        font-size: 2rem;
+        padding: 1.25rem;
+    }
+}

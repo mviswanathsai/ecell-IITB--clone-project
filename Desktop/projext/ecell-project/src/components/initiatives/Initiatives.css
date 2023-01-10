@@ -1,0 +1,51 @@
+.card-holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+
+
+}
+
+.t-initiatives{
+    display: grid;
+    gap: 2rem;
+    background-color: rgba(0,0,0,0.1);
+    padding: 3rem 3rem;
+
+    color: white;
+
+    text-align: center;
+}
+
+.h-initiatives{
+    font-size: 3rem;
+    color: #30475E;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.p-initiatives{
+    font-size: 1.25rem;
+    color: #F5F5F5;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media(max-width: 714px){
+    .h-initiatives{
+        font-size: 2.3rem;
+       
+    }
+    
+    .p-initiatives{
+        font-size: 1rem;
+       
+    }
+
+    .card-holder{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    
+    
+    }
+
+}

@@ -1,0 +1,114 @@
+
+
+.laptop{
+    background-image: url("../../assets/page1-bg.jpg");
+    object-fit: contain;
+    height: 100vh;
+    position: relative; 
+    top: -50px;
+    
+
+
+    background-repeat: repeat-y;
+
+  background-size: cover;
+
+  z-index: -999;
+}
+
+
+.heading{
+    
+    top: 45%;
+    left: 17.5%;
+    position: absolute;
+
+    max-width: 65%;
+
+    font-size: 6rem;
+
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-style: italic;
+
+
+    color: #F05454;
+}
+.heading p{
+    color: #30475E;
+    font-size: 3rem;
+}
+
+.page.one{
+    margin: 0;
+}
+
+
+.page.two {
+    background: linear-gradient(88deg, #F05454, #6E7173
+    );
+    background-size: 400% 400%;
+    margin: 0;
+ 
+  
+
+    text-align: center;
+
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 25%}
+    50%{background-position:100% 76%}
+    100%{background-position:0% 25%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 25%}
+    50%{background-position:100% 76%}
+    100%{background-position:0% 25%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 25%}
+    50%{background-position:100% 76%}
+    100%{background-position:0% 25%}
+}
+
+
+
+.page.three{
+   
+    background-color: #121212;
+    padding: 4rem 0;
+}
+
+.page.four{
+   
+    padding: 2rem;
+    background-color: #F05454;
+}
+
+@media(max-width: 1042px){
+
+    .heading{
+        font-size: 4rem;
+    }
+    .heading p{
+        
+        font-size: 2rem;
+    }
+
+}
+
+@media(max-width: 714px){
+    .heading{
+        font-size: 2.3rem;
+    }
+    .heading p{
+        
+        font-size: 1.15rem;
+    }
+
+}

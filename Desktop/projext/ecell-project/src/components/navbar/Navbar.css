@@ -1,0 +1,144 @@
+.logo{
+    max-width:50px;
+    max-height: 50px;
+}
+
+.container a{
+text-decoration: none;
+color: #333333;
+
+margin: 0 1rem;    
+padding: 1.75rem 1.5rem;
+
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-list{
+  display: flex;
+}
+
+span{
+    display: none;
+    padding: 1rem;
+}
+
+.nav-item::after{
+
+    content: "";
+    
+    border-style: solid none none none;
+    border-color: rgba(0,0,0,0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;   
+
+    transition: 0.25s ease-in;
+
+}
+
+.nav-item:hover, .nav-item.active{
+    
+    color: #F05454;
+   
+}
+
+.nav-item:hover::after{
+    content: "";
+    border-color: #F05454;
+    transition: 0.25s ease-in;
+}
+
+.nav-item.active::after{
+    content: "";
+    border-style: solid none none none;
+    border-color: #F05454;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;   
+
+}
+
+
+.nav-item{
+    
+    position: relative;
+   
+
+}
+
+.sub-nav-item{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+}
+
+.sub-nav-item:not(:last-child){
+  border: none none solid none;
+  border-color: #497174;
+}
+
+.nav-item:hover .sub-nav-item{
+   display: grid;
+}
+
+
+
+
+
+
+@media(max-width: 1065px){
+
+    .container{
+        justify-content: space-between;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+
+    span{
+        display: block;
+    }
+
+    .sine{
+        display: none;
+    }
+
+
+
+    .nav-list[toggled=notToggled]{
+        display: none;
+    }
+    .nav-list[toggled=toggled]{
+        position: absolute;
+        display: grid;
+        background-color: white;
+        top: 4rem;
+        z-index: 999;
+    }
+
+    .sub-nav-item{
+        top: 0;
+        left: 100%;
+    }
+    .nav-item:hover::after{
+        content: "";
+        border-color: #F05454;
+        transition: 0.25s ease-in;
+    }
+
+
+}
+
